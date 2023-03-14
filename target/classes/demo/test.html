@@ -44,6 +44,28 @@
       return h
   }
   console.log(f1())
+  console.log('age:${e}')
+  function f2(){
+      return 8*8*Math.PI
+  }
+  console.log(f2())
+  demoP = document.getElementById("demo");
+  let arr = [1,2,3,4,5]
+  arr.map((item) => {
+      return item+1
+  })
+  console.log(arr)
+  let i = arr.forEach((item,index)=>{
+
+  })
+  arr.push(7,8,9)
+  console.log(arr)
+  arr.unshift(0,1)
+  console.log(arr)
+  let ar=arr.filter((item)=>item>4)
+  console.log(ar)
+
+
 </script>
 </body>
 </html>
