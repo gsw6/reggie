@@ -3,7 +3,6 @@ package com.itheima.reggie.controller;
 import com.itheima.reggie.common.R;
 import com.itheima.reggie.entity.Orders;
 import com.itheima.reggie.service.OrdersService;
-import com.itheima.reggie.service.impl.OrdersServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
-@RequestMapping("/orders")
+@RequestMapping("/order")
 public class OrdersController {
     @Autowired
     private OrdersService ordersService;
