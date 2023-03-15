@@ -10,10 +10,12 @@ spring:
       username: root
       password: 123456
   redis:
-    host: 172.17.2.94
+    host: 127.0.0.1
     port: 6379
-    password: root@123456
     database: 0
+  cache:
+    redis:
+      time-to-live: 1800000  #设置缓存时间
   main:
     banner-mode: off
 mybatis-plus:
